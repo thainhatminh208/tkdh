@@ -1,203 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <title>Lughx BBQ Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HYPER CORE TECH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+<!-- Nút mở -->
 <button class="open-slider" id="openBtn">
-  <button class="close-slider" id="closeBtn">
   <i class="fas fa-bars"></i>
 </button>
 
-  <nav class="navbar">
-    <div class="logo">Lughx <span>BBQ</span></div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home"><i class="fas fa-home icon-home"></i> Trang chủ</a></li>
-      <li><a href="#menu"><i class="fas fa-utensils icon-menu"></i> Thực đơn</a></li>
-      <li><a href="#booking"><i class="fas fa-chair icon-chair"></i> Đặt bàn</a></li>
-      <li><a href="#news"><i class="fas fa-newspaper icon-news"></i> Tin tức</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope icon-contact"></i> Liên hệ</a></li>
-    </ul>
-  </nav>
-  <div class="overlay" id="overlay"></div>
-
+<!-- Nút đóng -->
 <button class="close-slider" id="closeBtn">
   <i class="fas fa-times"></i>
 </button>
 
-  <main>
+<!-- Navbar công nghệ -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo1.png" alt="HYPER CORE Logo" />
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home"><i class="fas fa-home icon-home"></i> Trang chủ</a></li>
+    <li><a href="#news"><i class="fas fa-newspaper icon-news"></i> Tin tức</a></li>
+    <li><a href="#menu"><i class="fas fa-shopping-bag icon-menu"></i> Sản phẩm</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope icon-contact"></i> Liên hệ</a></li>
+  </ul>
+</nav>
+
+<div class="overlay" id="overlay"></div>
+
+<main>
+
+<!-- Giới thiệu tech -->
 <section class="Gioi-thieu" id="home">
-<div class="slider-container">
-      <div class="slider" id="slider">
-        <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
-          <div class="slide-content">
-            <h2>Chào mừng đến với Lughx BBQ</h2>
-            <p>Thịt nướng cao cấp, đậm đà hương vị truyền thống</p>
-          </div>
-        </div>
-        <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
-          <div class="slide-content">
-            <h2>Thực đơn BBQ đặc sắc</h2>
-            <p>Khám phá những món nướng hấp dẫn tại nhà hàng</p>
-          </div>
-        </div>
-        <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
-          <div class="slide-content">
-            <h2>Không gian ấm cúng</h2>
-            <p>Phù hợp cho những bữa tiệc gia đình và bạn bè</p>
-          </div>
-        </div>
-        <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
-          <div class="slide-content">
-            <h2>Nguyên liệu tươi ngon</h2>
-            <p>Chỉ sử dụng thực phẩm sạch và chất lượng mỗi ngày</p>
-          </div>
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.jpg');">
+        <div class="slide-content">
+          <h2>HYPER CORE TECH HUB</h2>
+          <p>Khám phá những xu hướng công nghệ đỉnh cao của tương lai</p>
         </div>
       </div>
     </div>
-        
-        <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-        <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-      </div>
-    </section>
+  </div>
+</section>
 
+<!-- Section "Sản phẩm" -->
 <section class="Thuc-don" id="menu">
-  <h3>Thực đơn</h3>
+  <h3>Sản phẩm công nghệ</h3>
   <div class="filter-buttons">
     <button data-filter="all" class="active">Tất cả</button>
-    <button data-filter="bo">Thịt bò</button>
-    <button data-filter="ga">Gà</button>
-    <button data-filter="haisan">Hải sản</button>
-    <button data-filter="chay">Chay</button>
+    <button data-filter="laptop">Laptop</button>
+    <button data-filter="pc">PC</button>
+    <button data-filter="phukien">Phụ kiện</button>
+    <button data-filter="gaming">Gaming</button>
   </div>
 
   <div class="menu-container">
-    <div class="menu-item" data-type="bo">
-      <img src="img1.jpg" alt="Sườn nướng BBQ">
-      <h4>Sườn nướng BBQ</h4>
-      <p>Sườn heo nướng với nước sốt đậm đà, ăn kèm salad và khoai tây chiên.</p>
-      <span class="price">129.000đ</span>
+    <div class="menu-item" data-type="laptop">
+      <img src="img1.jpg" alt="Laptop Gaming ROG">
+      <h4>Laptop ROG Strix G17</h4>
+      <p>Hiệu năng cao với CPU Ryzen 9 và RTX 4070, màn hình 240Hz siêu mượt.</p>
+      <span class="price">39.990.000đ</span>
     </div>
-
-    <div class="menu-item" data-type="bo">
-      <img src="img1.jpg" alt="Bò cuộn phô mai">
-      <h4>Bò cuộn phô mai</h4>
-      <p>Thịt bò tươi cuộn phô mai mozzarella, nướng thơm béo khó cưỡng.</p>
-      <span class="price">149.000đ</span>
+    <div class="menu-item" data-type="pc">
+      <img src="img1.jpg" alt="PC mạnh mẽ">
+      <h4>PC Intel i9 Gen13</h4>
+      <p>Case LED RGB, RAM 32GB, GPU RTX 4080 – chiến game max setting.</p>
+      <span class="price">49.990.000đ</span>
     </div>
-
-    <div class="menu-item" data-type="ga">
-      <img src="img1.jpg" alt="Gà nướng nguyên con">
-      <h4>Gà nướng nguyên con</h4>
-      <p>Gà ta nướng than hoa, ướp gia vị bí truyền, ăn kèm xôi và rau rừng.</p>
-      <span class="price">179.000đ</span>
+    <div class="menu-item" data-type="phukien">
+      <img src="img1.jpg" alt="Tai nghe gaming">
+      <h4>Tai nghe Logitech G733</h4>
+      <p>Âm thanh vòm 7.1, đèn RGB, kết nối không dây cực nhạy.</p>
+      <span class="price">3.490.000đ</span>
     </div>
-
-    <div class="menu-item" data-type="haisan">
-      <img src="img1.jpg" alt="Tôm nướng muối ớt">
-      <h4>Tôm nướng muối ớt</h4>
-      <p>Tôm sú tươi nướng muối ớt cay nồng, ăn kèm rau sống và nước chấm chua ngọt.</p>
-      <span class="price">139.000đ</span>
+    <div class="menu-item" data-type="gaming">
+      <img src="img1.jpg" alt="Ghế Gaming Extreme">
+      <h4>Ghế Gaming Extreme Zero</h4>
+      <p>Ghế công thái học, hỗ trợ lưng cổ, da PU cao cấp, đệm mút dày.</p>
+      <span class="price">5.990.000đ</span>
     </div>
-
-    <div class="menu-item" data-type="haisan">
-      <img src="img1.jpg" alt="Hải sản nướng thập cẩm">
-      <h4>Hải sản nướng thập cẩm</h4>
-      <p>Mực, tôm, sò điệp nướng sốt cay BBQ, hương vị biển cả tuyệt vời.</p>
-      <span class="price">189.000đ</span>
-    </div>
-
-    <div class="menu-item" data-type="haisan">
-      <img src="img1.jpg" alt="Cá hồi nướng giấy bạc">
-      <h4>Cá hồi nướng giấy bạc</h4>
-      <p>Cá hồi Na Uy nướng cùng rau củ trong giấy bạc, giữ trọn vị tươi ngon.</p>
-      <span class="price">159.000đ</span>
-    </div>
-
-    <div class="menu-item" data-type="bo">
-      <img src="img1.jpg" alt="Ba chỉ nướng Hàn Quốc">
-      <h4>Ba chỉ nướng Hàn Quốc</h4>
-      <p>Thịt ba chỉ heo tươi ướp gia vị Hàn Quốc, ăn kèm kim chi và rau sống.</p>
-      <span class="price">119.000đ</span>
-    </div>
-
-    <div class="menu-item" data-type="bo">
-      <img src="img1.jpg" alt="Bò Mỹ nướng tảng">
-      <h4>Bò Mỹ nướng tảng</h4>
-      <p>Bò nhập khẩu nướng nguyên tảng, mềm mọng, thơm lừng, ăn cùng sốt tiêu đen.</p>
-      <span class="price">199.000đ</span>
-    </div>
-
-    <div class="menu-item" data-type="chay">
-      <img src="img1.jpg" alt="Rau củ nướng chay">
-      <h4>Rau củ nướng chay</h4>
-      <p>Hỗn hợp rau củ quả theo mùa nướng than hoa, phù hợp thực khách ăn chay.</p>
-      <span class="price">99.000đ</span>
+    <div class="menu-item" data-type="phukien">
+      <img src="img1.jpg" alt="Chuột không dây Razer">
+      <h4>Chuột Razer Viper V2 Pro</h4>
+      <p>Siêu nhẹ, tốc độ phản hồi cực nhanh, thích hợp FPS chuyên nghiệp.</p>
+      <span class="price">2.790.000đ</span>
     </div>
   </div>
 </section>
 
-<section class="Dat-ban" id="booking">
-  <h3>Đặt bàn</h3>
-  <p>Đặt bàn tại Nhà hàng Lughx BBQ</p>
-
-  <div class="table-grid">
-    <div class="table" data-status="available" data-id="1">Bàn 1</div>
-    <div class="table" data-status="reserved" data-id="2">Bàn 2</div>
-    <div class="table" data-status="occupied" data-id="3">Bàn 3</div>
-    <div class="table" data-status="available" data-id="4">Bàn 4</div>
-    <div class="table" data-status="reserved" data-id="5">Bàn 5</div>
-    <div class="table" data-status="available" data-id="6">Bàn 6</div>
-    <div class="table" data-status="occupied" data-id="7">Bàn 7</div>
-    <div class="table" data-status="available" data-id="8">Bàn 8</div>
-    <div class="table" data-status="reserved" data-id="9">Bàn 9</div>
-  </div>
-
-  <div class="notification" id="notification"></div>
-
-  <div class="booking-form" id="bookingForm">
-    <h4>Đăng ký đặt bàn</h4>
-    <form id="formBooking">
-      <label for="name">Họ và tên:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="phone">Số điện thoại:</label>
-      <input type="tel" id="phone" name="phone" required>
-      <label for="time">Thời gian:</label>
-      <input type="datetime-local" id="time" name="time" required>
-      <button type="submit">Đặt bàn</button>
-    </form>
-  </div>
-</section>
-
+<!-- Tin tức công nghệ -->
 <section class="Tin-tuc" id="news">
-  <h3>Tin tức</h3>
-  <p>Cập nhật tin tức mới nhất từ Nhà hàng Lughx BBQ</p>
+  <h3>Tin công nghệ</h3>
+  <p>Cập nhật xu hướng và sản phẩm công nghệ mới nhất</p>
   <div class="news-container">
     <article class="news-item">
-      <img src="demo.png" alt="khai trương chi nhánh mới">
-      <h4>Khai trương chi nhánh mới</h4>
-      <p>Nhà hàng Lughx BBQ vừa khai trương chi nhánh mới tại Quận 7, TP.HCM với nhiều ưu đãi hấp dẫn cho khách hàng.</p>
+      <img src="demo.png" alt="Ra mắt CPU Intel Gen14">
+      <h4>Intel trình làng CPU Gen14</h4>
+      <p>Intel chính thức công bố dòng CPU Gen14 với cải tiến vượt trội về hiệu năng đa nhân.</p>
     </article>
     <article class="news-item">
-      <img src="demo.png" alt="combo BBQ giảm giá">
-      <h4>Combo BBQ giảm giá 20%</h4>
-      <p>Chương trình ưu đãi đặc biệt dịp hè – giảm ngay 20% cho tất cả combo nướng trong tuần đầu tháng 6.</p>
+      <img src="demo.png" alt="Laptop AI-powered">
+      <h4>Laptop tích hợp AI đầu tiên</h4>
+      <p>Dell & HP giới thiệu laptop tích hợp AI, tăng hiệu suất xử lý và tối ưu pin.</p>
     </article>
     <article class="news-item">
-      <img src="demo.png" alt="giới thiệu món mới">
-      <h4>Giới thiệu món mới: Bạch tuộc sốt cay Hàn</h4>
-      <p>Thưởng thức hương vị mới lạ với món Bạch tuộc sốt cay chuẩn vị Hàn Quốc – chỉ có tại Lughx BBQ!</p>
+      <img src="demo.png" alt="RTX 5090 leak">
+      <h4>Rò rỉ thông số RTX 5090</h4>
+      <p>Thông số GPU RTX 5090 được hé lộ với sức mạnh vượt xa RTX 4090 hiện tại.</p>
     </article>
   </div>
 </section>
 
+<!-- Liên hệ -->
 <section class="Lien-he" id="contact">
   <h3>Liên hệ</h3>
-  <p>Liên hệ với Nhà hàng Lughx BBQ</p>
+  <p>Liên hệ với HYPER CORE TECH</p>
   <div class="contact-container">
     <form id="contactForm">
       <input type="text" placeholder="Họ và tên" required>
@@ -206,18 +130,21 @@
       <button type="submit">Gửi tin nhắn</button>
     </form>
     <div class="contact-info">
-      <p><strong>Địa chỉ:</strong>123 Nguyen ABC, TPDANANG</p>
-      <p><strong>Điện thoại:</strong> 0123 456 789</p>
-      <p><strong>Email:</strong> contact@lughxbbq.vn</p>
-      <p><strong>Giờ mở cửa:</strong> 10:00 – 22:00 (Hằng ngày)</p>
+      <p><strong>Địa chỉ:</strong> 123 Đường Sáng Tạo, Q.1, TP.HCM</p>
+      <p><strong>Điện thoại:</strong> 0987 654 321</p>
+      <p><strong>Email:</strong> support@hypercore.vn</p>
+      <p><strong>Giờ làm việc:</strong> 09:00 – 18:00 (T2 – T7)</p>
     </div>
   </div>
 </section>
 
+<!-- Footer -->
 <footer>
-  <p>&copy; 2023 Nhà hàng Lughx BBQ. Bảo lưu mọi quyền.</p>
+  <p>&copy; 2025 HYPER CORE TECH. All rights reserved.</p>
 </footer>
-  </main>
-  <script src="script.js"></script>
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
